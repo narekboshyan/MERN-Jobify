@@ -1,12 +1,11 @@
 import React from "react";
 import { ReactComponent as LogoSvg } from "../assets/images/logo.svg";
 import { ReactComponent as MainSvg } from "../assets/images/main.svg";
-import classes from "./Landing.module.scss";
+import Wrapper from "../assets/wrappers/LandingPage";
 
 const Landing = () => {
-  console.log(classes);
     return (
-        <main className={classes.wrapper}>
+        <Wrapper>
             <nav>
                 <LogoSvg alt="jobify" className="logo" />
             </nav>
@@ -26,7 +25,7 @@ const Landing = () => {
                 </div>
                 <MainSvg className="img main-img" />
             </div>
-        </main>
+        </Wrapper>
     );
 };
 
